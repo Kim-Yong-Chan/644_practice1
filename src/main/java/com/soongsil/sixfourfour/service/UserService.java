@@ -25,8 +25,12 @@ public class UserService {
         return null;
     }
 
-//    public User readUser(long id) {
+    public User readUser(long id) {
+        User u = new User(id, "dsa", "dsadsa");
+        return u;
 //        Optional<User> user = userRepository.findById(id);
+//        user.orElseThrow(() -> new ExpressionException("dsa"));
 //
-//    }
+//        return null;
+    }
 }
